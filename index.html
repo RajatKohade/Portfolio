@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="style.css" rel="stylesheet">
+    <script>
+        function show() {
+            const btn = document.querySelector('.more')
+            const menu = document.querySelector('.menu')
+            if (menu.style.display == "none") {
+                menu.style.display = "inline-grid"
+            }
+            else {
+                menu.style.display = "none"
+            }
+        }
+        var titles = document.querySelectorAll('.title');
+        window.addEventListener('scroll', checkTitle);
+        checkTitle();
+
+        
+
+
+    </script>
+</head>
+
+<body>
+    <div class="more"><img src="Images/more.png" alt="Image" onclick="show()"></div>
+    <div class="menu">
+        <a href="#home.">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#TechnicalSkill">Technical Skills</a>
+        <a href="#education">Education</a>
+        <a href="#persnal">Persnal Details</a>
+    </div>
+    <section id="home">
+        <div class="wrapper">
+            <div class="containt">
+                <div class="text">
+                    <h1 style="animation: leftside 500ms 1s normal ease-out,initialy 1s normal;">Hello ! I am Rajat
+                        Kohade</h1>
+                    <h1 id="prof">JAVA FULL STACK DEVELOPER</h1>
+                    <p style="animation: leftside 500ms 2s normal ease-out,initialy 2s normal;">Responsible and
+                        motivated student ready to apply education in the workplace. Offers excellent technical
+                        abilities with Software ,Web Applications and Database in technologies such as Core Java, SQL,
+                        HTML, CSS, JavaScript, JSP, and JDBC and ability to
+                        handle challenging work, and excellent time management.</p>
+                    <div class="icons">
+                        <img src="Images/email.png" alt=""
+                            style="animation: leftside 500ms 3s normal ease-out,initialy 3s normal;">
+                        <p style="animation: leftside 500ms 3.5s normal ease-out,initialy 3.5s normal;">
+                            rajatkohade05@gmail.com</p>
+                        <img src="Images/phone-call.png" alt=""
+                            style="animation: leftside 500ms 4s normal ease-out,initialy 4s normal;">
+                        <p style="animation: leftside 500ms 4.5s normal ease-out,initialy 4.5s normal;">+91 9822161557
+                        </p>
+                        <img src="Images/linkedin.png" alt=""
+                            style="animation: leftside 500ms 5s normal ease-out,initialy 5s normal;">
+                        <p style="animation: leftside 500ms 5.5s normal ease-out,initialy 5.5s normal;">
+                            https://www.linkedin.com/in/rajat-kohade-188b312aa</p>
+                    </div>
+                </div>
+                <div class="design">
+                    <img id="homedp" src="Images/RK_IdPhoto_Resized.jpg" alt="Image">
+                </div>
+            </div>
+
+            <div class="right">
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="section">
+        <h1 class="title">Projects</h1>
+        <div class="displayprojects">
+            <div class="carpurchasing">
+                <h1 class="underline">Car Purchasing Website</h1>
+                <p>This project is showing specifications of cars of particular companies and user can purchase that
+                    car.
+                </p>
+                <h3 class="underline">Technologies:</h3>
+                <ul>
+                    <li><b>Backend:</b> Java, Advanced Java, JSP</li>
+                    <li><b>Frontend:</b> HTML, CSS, JavaScript</li>
+                    <li><b>Database: </b>MySQL</li>
+                </ul>
+                <h3 class="underline">
+                    Modules:
+                </h3>
+                <ul>
+                    <li>Log In</li>
+                    <li>View Profile</li>
+                    <li>View Cart</li>
+                    <li>Filters</li>
+                    <li>Search</li>
+                </ul>
+            </div>
+            <div class="HotelRecommendation">
+                <h1 class="underline">Hotel Recommendation System</h1>
+                <p>This project is made for recommend hotels in metropolitan cities the objective of this project is to
+                    give
+                    the best services to customers.</p>
+                <h3 class="underline">Technologies:</h3>
+                <ul>
+                    <li><b>Backend:</b> Java, Advanced Java</li>
+                    <li><b>Frontend:</b> HTML, CSS</li>
+                    <li><b>Database:</b> MySQL</li>
+                </ul>
+                <h3 class="underline">
+                    Modules:
+                </h3>
+                <ul>
+                    <li>Log In</li>
+                    <li>View Profile</li>
+                    <li>View Hotels</li>
+                    <li>Edit Hotel Details</li>
+                    <li>Search</li>
+                </ul>
+            </div>
+    </section>
+    <section id="TechnicalSkill" class="section">
+        <h1 class="title">Technical Skills</h1>
+        <div class="list">
+            <ul class="main_list">
+                <li class="sublist"><b>C Programing</b>
+                    <ul>
+                        <li>Array</li>
+                        <li>Pointer</li>
+                        <li>String</li>
+                        <li>Union</li>
+                        <li>Stucture</li>
+                        <li>Loops</li>
+                        <li>Decision Making Statements</li>
+                    </ul>
+                </li>
+                <li class="sublist"><b>C++</b>
+                    <ul>
+                        <li>Constructors</li>
+                        <li>Functions</li>
+                        <li>Polymorphism</li>
+                        <li>Inheritance</li>
+                        <li>Class and Objects</li>
+                    </ul>
+                </li>
+                <li class="sublist"><b>Core Java</b>
+                    <ul>
+                        <li>Constructor</li>
+                        <li>Inheritance</li>
+                        <li>Interface</li>
+                        <li>Abstraction</li>
+                        <li>Collection</li>
+                        <li>File Handling</li>
+                        <li>Exception Handling</li>
+                        <li>Threading</li>
+                        <li>Wrapper Class</li>
+                    </ul>
+                </li>
+                <li class="sublist"><b>Advanced Java</b>
+                    <ul>
+                        <li>JDBC</li>
+                        <li>Servlet</li>
+                        <li>Java Server Pages</li>
+                    </ul>
+                </li>
+                <li class="sublist"><b>OOPs Concept</b>
+                    <ul>
+                        <li>Inheritance</li>
+                        <li>Encapsulation</li>
+                        <li>Abstraction</li>
+                        <li>Polymorphism</li>
+                    </ul>
+                </li>
+                <li class="sublist"><b>HTML</b>
+                    <ul>
+                        <li>List Tags</li>
+                        <li>Table Tags</li>
+                        <li>Div Tag</li>
+                        <li>Text Tags</li>
+                        <li>Font Tags</li>
+                    </ul>
+                </li>
+                <li class="sublist"><b>CSS</b>
+                    <ul>
+                        <li>Display</li>
+                        <li>Positions</li>
+                        <li>Text Decoration and Style</li>
+                        <li>Animations</li>
+                        <li>Psudeo Class</li>
+                    </ul>
+                </li>
+                <li class="sublist"><b>JavaScript</b>
+                    <ul>
+                        <li>Data Types</li>
+                        <li>Events Handling</li>
+                        <li>Document Object Model</li>
+                        <li>Regular Expressions</li>
+                    </ul>
+                </li>
+                <li class="sublist"><b>SQL</b>
+                    <ul>
+                        <li>DDL ,DML ,DCL commands</li>
+                        <li>Constraints</li>
+                        <li>Joins</li>
+                        <li>Sub-Query</li>
+                        <li>Procedure</li>
+                        <li>Normalizations</li>
+                        <li>Triggers</li>
+                        <li>Views</li>
+                        <li>Indices</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="education" class="section">
+        <h1 class="title">Education</h1>
+        <div class="steps">
+            <h1 class="head underline">Bachelor of Engineering:</h1>
+            <p class="from">Zeal College of Engineering and Research, Nahre
+                Pune, Maharashtra.
+            </p>
+            <p class="align">Graduated, 2022
+                Marks 85%
+            </p>
+            <h1 class="head underline">Polytechnic:</h1>
+            <p class="from">Dnynashree Institute of Engineering and
+                Technology, Satara, Maharashtra</p>
+            <p class="align">Graduated, 2019
+                Marks 67%</p>
+            <h1 class="head underline">10<sup>th</sup>:</h1>
+            <p class="from">New English
+                School,
+                Satara, Maharastra.
+            </p>
+            <p class="align">Graduated, 2014
+                Marks 77%</p>
+        </div>
+    </section>
+    <section id="persnal" class="section">
+        <h1 class="title scrollanimation">Persnal Details</h1>
+        <div id="info">
+            <div id="img">
+                <center><img id="profiledp" src="Images/RK_IdPhoto_Resized.jpg" alt="Image" height="500px"></center>
+            </div>
+            <div>
+                <h3>Name:</h3>
+                <p>Mr. Kohade Rajat Ramdas</p>
+                <h3>Date Of Birth:</h3>
+                <p>05-11-2000</p>
+                <h3>Language Known:</h3>
+                <p>Marathi , Hindi & English </p>
+                <h3>Nationality/ Religion:</h3>
+                <p>Indian</p>
+            </div>
+            <div id="sec2">
+                <h3>Interest & Hobbies :</h3>
+                <p>Photography, Playing Videogames</p>
+                <h3>Mobile Number:</h3>
+                <p>+91 9822161557</p>
+                <h3>Email:</h3>
+                <p>rajatkohade05@gmail.com</p>
+                <h3>Address :</h3>
+                <p>A-9 Darshan Residency, Rangole Colony ,Shahupuri ,Satara .</p>
+            </div>
+        </div>
+        </div>
+    </section>
+</body>
+
+</html>
