@@ -43,6 +43,7 @@ html {
     min-height: 100vh;
     background-color: var(--first);
     align-items: center;
+    
 }
 
 .containt div h1,
@@ -56,6 +57,7 @@ p {
     color: var(--second);
     margin-left: 180px;
     width: 37%;
+    z-index: 1000;
 }
 
 #prof {
@@ -218,8 +220,24 @@ a:hover {
         opacity: 0;
     }
 }
-
-@media (min-width:1025px) and (max-width:1440px) {
+@media   screen and (min-width:1440px) and (max-width:1808px) {
+    .menu
+    {
+        padding-left: 30px;
+    }
+    
+}
+@media screen and (max-width:1280px) {
+    .right
+    {
+        background-color: var(--first);
+    }
+    #homedp
+    {
+        height: 400px;
+    }
+}
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .text {
         margin-left: 30px;
     }
@@ -245,7 +263,7 @@ a:hover {
     }
 
     .icons {
-        /* width: 1000%; */
+        
         margin-top: 300px;
     }
 
@@ -266,7 +284,7 @@ a:hover {
     }
 }
 
-@media (min-width:768px) and (max-width:1024px) {
+@media screen and  (min-width:768px) and (max-width:1024px) {
     .text {
         margin-left: 30px;
     }
@@ -339,7 +357,7 @@ a:hover {
     }
 }
 
-@media (min-width:425px) and (max-width:768px) {
+@media screen and  (min-width:646px) and (max-width:768px) {
     .text {
         width: 50%;
     }
@@ -397,8 +415,101 @@ a:hover {
         width: 100%;
     }
 }
+@media screen and (min-width: 425px) and (max-width:646px) {
+    .right {
+        display: none;
+    }
 
-@media (max-width:425px) {
+    .containt {
+        width: 100%;
+    }
+
+    .design {
+        left: 30%;
+        top: 40px;
+        z-index: 100;
+    }
+
+    #homedp {
+        height: 200px;
+        z-index: 100;
+    }
+
+    .icons {
+        margin-top: 100px;
+    }
+
+    .text {
+        width: 100%;
+        margin-left: 10px;
+        margin-top: 300px;
+    }
+
+    .icons {
+        display: grid;
+        grid-template-columns: 30px 1fr;
+        grid-template-rows: auto;
+    }
+
+    a,
+    p,
+    h1,
+    h3 {
+        font-size: 15px;
+        margin-right: 20px;
+        overflow: visible;
+    }
+
+    p {
+        padding: 5px;
+    }
+
+    .icons img {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+
+    .icons p {
+        display: flex;
+        margin-right: 10px;
+        padding-top: 2px;
+    }
+
+    .more {
+        display: flex;
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        margin: 10px 0 0 10px;
+    }
+
+    .menu {
+        display: none;
+        text-align: center;
+        margin-left: 40px;
+        padding-left: 0;
+        width: 35%;
+        animation: none;
+        z-index: 1000;
+        backdrop-filter: blur(50px);
+        height: 250px;
+        border-radius: 20px;
+        border: var(--second) 1px solid;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    a {
+        border: none;
+        overflow: visible;
+        font-size: 15px;
+        z-index: 1000;
+        margin-right: 0;
+        margin-top: 5px;
+    }
+}
+@media screen and  (max-width:425px) {
     .right {
         display: none;
     }
